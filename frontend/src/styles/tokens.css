@@ -1,0 +1,37 @@
+/* Central design tokens. Change the palette or type here and the whole site follows. */
+:root {
+  --c-ivory: #f4efe7;
+  --c-offwhite: #faf8f4;
+  --c-beige: #e6ddcf;
+  --c-stone: #a79d8d;
+  --c-stone-dark: #6f675b;
+  --c-charcoal: #2a2825;
+  --c-black: #0e0d0c;
+  --c-metal: #b08d57; /* subtle metallic accent */
+  --c-error: #9b3b2f;
+  --c-success: #4d6b4a;
+
+  --bg: var(--c-ivory);
+  --bg-alt: var(--c-offwhite);
+  --fg: var(--c-black);
+  --fg-muted: var(--c-stone-dark);
+  --line: rgba(14, 13, 12, 0.16);
+  --accent: var(--c-metal);
+
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --gutter: clamp(20px, 4vw, 64px);
+  --max: 1680px;
+  --nav-h: 84px;
+  --section: clamp(80px, 12vw, 200px);
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --radius: 0px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nav-h: 68px;
+  }
+}
